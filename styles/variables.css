@@ -1,0 +1,18 @@
+:root {
+    /* colors */
+    --main-color: #304D63;
+
+    --secondary-color: #ED8975;
+    --secondary-dark-color: #9e5e51;
+    
+    --tertiary-light-color: #eaf6f6;
+    --tertiary-color: #B2E7E8;
+
+    --white: #FFFFFF;
+    
+    --blue: #1877F2;    
+
+    /* spacing */
+
+    --radius-size: 12px;
+  }

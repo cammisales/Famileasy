@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="styles/main.css" rel="stylesheet" type="text/css" title="estilos principais">
+  <script src="https://kit.fontawesome.com/e81df6b9cb.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500&display=swap" rel="stylesheet">
+
+  <title>Famileasy</title>
+</head>
+
+<body class="bg-tertiary">
+
+
+  <header class="custom-header text-center bg-main text-white pb-3">
+    <nav class="navbar navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Olá, FIAP!</a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Minha Conta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cadastrar recebimentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cadastrar gastos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Investimentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cartões</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Balanço</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Família</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Relatório Financeiro</a>
+            </li>
+            <li class="nav-item absolute-bottom">
+              <a class="nav-link fw-bold" href="./index.html">SAIR ›</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="py-3">
+        <h1 class="mb-3"><span class="title-underlined">Relatório financeiro</span></h1>
+        <p>Aqui você terá a análise geral de sua vida financeira</p>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <ul class="nav nav-tabs custom-tabs flex-row mb-5" id="myTab" role="tablist">
+      <li class="nav-item flex-fill text-sm-center" role="presentation">
+        <button class="nav-link w-100 active" id="semanal-tab" data-bs-toggle="tab" data-bs-target="#semanal"
+          type="button" role="tab" aria-controls="semanal" aria-selected="true">Semanal</button>
+      </li>
+      <li class="nav-item flex-fill text-sm-center" role="presentation">
+        <button class="nav-link w-100" id="mensal-tab" data-bs-toggle="tab" data-bs-target="#mensal" type="button"
+          role="tab" aria-controls="mensal" aria-selected="false">Mensal</button>
+      </li>
+      <li class="nav-item flex-fill text-sm-center" role="presentation">
+        <button class="nav-link w-100" id="anual-tab" data-bs-toggle="tab" data-bs-target="#anual" type="button"
+          role="tab" aria-controls="anual" aria-selected="false">Anual</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="semanal" role="tabpanel" aria-labelledby="semanal-tab">
+        <h2 class="text-center py-3 txt-secondary fw-bold">Últimos 7 dias</h2>
+        <div class="bg-light text-center p-4 rounded-4 mb-5">
+          <h3>Total de recebimentos no período</h3>
+          <p class="txt-secondary">R$ 3.212,69</p>
+          <h3>Total de gastos no período</h3>
+          <p class="txt-secondary">R$ 2.912,64</p>
+        </div>
+        <div class="mb-5 container">
+          <div class="row">
+            <div class="col-12 g-0">
+              <h2> Investimento mensal </h2>
+            </div>
+            <div class="col-12">
+              <div class="bg-light row rounded-4 p-3">
+                <div class="col-6 d-flex align-items-center">
+                  <i class="fa-solid fa-money-bill-trend-up fs-2 me-2"></i>Tesouro Selic
+                </div>
+                <div class="col-6 d-flex align-items-center justify-content-end txt-secondary fw-bold">R$ 290,00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-5 container">
+          <div class="row">
+            <div class="col-12 g-0">
+              <h2> Categoria com maior gasto no período</h2>
+            </div>
+            <div class="col-12">
+              <div class="bg-light row rounded-4 p-3">
+                <div class="col-6 d-flex align-items-center">
+                  <i class="fa-solid fa-bowl-food fs-2 me-2"></i>Alimentação
+                </div>
+                <div class="col-6 d-flex align-items-center justify-content-end txt-secondary fw-bold">R$ 989,00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="tab-pane fade" id="mensal" role="tabpanel" aria-labelledby="mensal-tab">
+        <h2 class="text-center py-3 txt-secondary fw-bold">Junho/2022</h2>
+        <div class="bg-light text-center p-4 rounded-4 mb-5">
+          <h3>Total de recebimentos no período</h3>
+          <p class="txt-secondary">R$ 13.220,99</p>
+          <h3>Total de gastos no período</h3>
+          <p class="txt-secondary">R$ 10.612,22</p>
+        </div>
+        <div class="mb-5 container">
+          <div class="row">
+            <div class="col-12 g-0">
+              <h2> Investimento mensal </h2>
+            </div>
+            <div class="col-12">
+              <div class="bg-light row rounded-4 p-3">
+                <div class="col-6 d-flex align-items-center">
+                  <i class="fa-solid fa-money-bill-trend-up fs-2 me-2"></i>Tesouro Selic
+                </div>
+                <div class="col-6 d-flex align-items-center justify-content-end txt-secondary fw-bold">R$ 1.920,00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-5 container">
+          <div class="row">
+            <div class="col-12 g-0">
+              <h2> Categoria com maior gasto no período</h2>
+            </div>
+            <div class="col-12">
+              <div class="bg-light row rounded-4 p-3">
+                <div class="col-6 d-flex align-items-center">
+                  <i class="fa-solid fa-house-chimney fs-2 me-2"></i></i>Moradia
+                </div>
+                <div class="col-6 d-flex align-items-center justify-content-end txt-secondary fw-bold">R$ 4.989,00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="anual" role="tabpanel" aria-labelledby="anual-tab">
+        <h2 class="text-center py-3 txt-secondary fw-bold">2022</h2>
+        <div class="bg-light text-center p-4 rounded-4 mb-5">
+          <h3>Total de recebimentos no período</h3>
+          <p class="txt-secondary">R$ 171.922.12</p>
+          <h3>Total de gastos no período</h3>
+          <p class="txt-secondary">R$ 162.900,01</p>
+        </div>
+        <div class="mb-5 container">
+          <div class="row">
+            <div class="col-12 g-0">
+              <h2> Investimento mensal </h2>
+            </div>
+            <div class="col-12">
+              <div class="bg-light row rounded-4 p-3">
+                <div class="col-6 d-flex align-items-center">
+                  <i class="fa-solid fa-money-bill-trend-up fs-2 me-2"></i>Tesouro Selic
+                </div>
+                <div class="col-6 d-flex align-items-center justify-content-end txt-secondary fw-bold">R$ 15.290,00
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-5 container">
+          <div class="row">
+            <div class="col-12 g-0">
+              <h2> Categoria com maior gasto no período</h2>
+            </div>
+            <div class="col-12">
+              <div class="bg-light row rounded-4 p-3">
+                <div class="col-6 d-flex align-items-center">
+                  <i class="fa-solid fa-house-chimney fs-2 me-2"></i>Moradia
+                </div>
+                <div class="col-6 d-flex align-items-center justify-content-end txt-secondary fw-bold">R$ 60.000,00
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
